@@ -1,0 +1,14 @@
+{
+  "name": "test-project",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"yarn:dev:backend\" \"yarn:dev:frontend\"",
+    "dev:backend": "cd backend && yarn dev",
+    "dev:frontend": "cd frontend && yarn dev",
+    "install:all": "yarn install && cd backend && yarn install && cd ../frontend && yarn install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
