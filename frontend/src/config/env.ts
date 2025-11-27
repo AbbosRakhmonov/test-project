@@ -3,7 +3,7 @@
 
 export const env = {
   // API Configuration
-  VITE_API_URL: import.meta.env.VITE_API_URL || "http://localhost:3001",
+  VITE_API_URL: import.meta.env.VITE_API_URL,
   VITE_API_BASE_PATH: import.meta.env.VITE_API_BASE_PATH || "/api",
 
   // App Configuration
